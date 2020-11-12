@@ -9,7 +9,12 @@ dependencies:
   - matplotlib
   - jupyter
   - jupyterlab
+  # torch (cpu only) has to be specified differently, e.g. pytorch's website suggested installation command:
+  # conda install pytorch torchvision torchaudio cpuonly -c pytorch
   - pytorch>=1.4
+  # If you intend to install pytorch on a machine having GPU, comment out or delete the line with `cpuonly`.
+  # N.B. `cpuonly` is a conda package, not an option for the command `conda`.
+  - cpuonly
   - torchvision>=0.5
   - torchtext
   - opencv
