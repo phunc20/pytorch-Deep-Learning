@@ -23,3 +23,7 @@ imdb
 data
 .jekyll-cache
 _site
+
+# phunc20's habbit
+trash.*
+corbeille/
